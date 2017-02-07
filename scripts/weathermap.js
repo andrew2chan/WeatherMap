@@ -13,16 +13,6 @@ function display(xml) {
 	var i, j;
 	var txt = "";
 	var xmlDoc = xml.responseXML;
-	/*var x = xmlDoc.documentElement.childNodes;
-	for (i= 0; i< x.length; i++) { 
-		if (x[i].nodeType== 1) {
-			txt += x[i].nodeName+ "<br>";
-			var y = x[i].childNodes;
-			for(j = 0; j < y.length; j++) {
-				txt += x[i].childNodes[j].nodeValue + "<br>";
-			}
-		}
-	}
-	document.write(txt); */
-	document.write(xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue);
+	var x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+	x = xmlDoc.getElementsByTagName("country")[0].childNodes[0];
 }
