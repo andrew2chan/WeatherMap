@@ -46,6 +46,26 @@ footer {
 		padding: 20px 0;
 	}
 	
+	li#logo {
+		display: inline-block;
+		vertical-align: bottom;
+		float: left;
+		font-size: 300%; 
+	}
+	
+	img#logo {
+		display: inline-block;
+		margin-left: 10px;
+		border-radius: 100px;
+		width: 40px;
+	}
+	
+	a#logo {
+		color: white;
+		text-decoration: none;
+		font-family: 'Exo 2', sans-serif;
+	}
+	
 	a.navbar:hover { /* navbar items */
 		background-color: #005c99;
 		color: #e3e3e3;
