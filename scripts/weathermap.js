@@ -15,4 +15,5 @@ function display(xml) {
 	var xmlDoc = xml.responseXML;
 	var x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
 	var y = xmlDoc.getElementsByTagName("country")[0].childNodes[0];
+	console.log(x.nodeValue + ", " + y.nodeValue);
 }
