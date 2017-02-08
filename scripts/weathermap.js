@@ -14,5 +14,5 @@ function display(xml) {
 	var txt = "";
 	var xmlDoc = xml.responseXML;
 	var x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
-	x = xmlDoc.getElementsByTagName("country")[0].childNodes[0];
+	var y = xmlDoc.getElementsByTagName("country")[0].childNodes[0];
 }
