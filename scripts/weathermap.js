@@ -13,7 +13,10 @@ function display(xml) {
 	var i, j;
 	var txt = "";
 	var xmlDoc = xml.responseXML;
-	var x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
-	var y = xmlDoc.getElementsByTagName("country")[0].childNodes[0];
-	console.log(x.nodeValue + ", " + y.nodeValue);
+	var city = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+	var country = xmlDoc.getElementsByTagName("country")[0].childNodes[0];
+	var temperature = xmlDoc.getElementsByTagName("temperature")[0].getAttribute("value");
+	document.getElementById("city").innerHTML = city.nodeValue;
+	document.getElementById("country").innerHTML = country.nodeValue;
+	document.getElementById("temperature").innerHTML = temperature;
 }
