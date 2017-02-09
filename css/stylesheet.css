@@ -139,8 +139,45 @@ footer {
 		padding: 0;
 	}
 	
+	h3#weatherValue {
+		font-family: 'Exo 2', sans-serif;
+		margin: 0;
+		margin-bottom: 15px;
+		padding: 0;
+	}
+	
+	h2#temperature {
+		display: inline-block;
+	}
+	
+	div#celsius {
+		display: inline-block;
+		font-size: 150%;
+		margin: 0 5px;
+		cursor: pointer;
+	}
+	
+	div#stick {
+		display: inline-block;
+		font-size: 150%;
+		margin: 0 5px;
+	}
+	
+	div#fahrenheit {
+		display: inline-block;
+		font-size: 150%;
+		margin: 0 5px;
+		cursor: pointer;
+	}
+	
+	div#celsius:hover, div#fahrenheit:hover {
+		color: #89bdd3;
+		-webkit-transition: all 0.5s ease-in-out;
+		transition: all 0.5s ease-in-out;
+	}
+	
 	article {
-		width: 80%;
+		width: 50%;
 		margin: auto;
 	}
 }
