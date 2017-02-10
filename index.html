@@ -21,14 +21,68 @@
 	<h1>Current Weather Forecast</h1>
 	<article>
 		<section> <!-- current -->
-			<h2 id="city"></h2>
-			<h3 id="country"></h2>
-			<h3 id="weatherValue"></h3>
-			<div id="icon"></div>
-			<h2 id="temperature"></h2>
-			<div id="celsius">C</div>
-			<div id="stick">|</div>
-			<div id="fahrenheit">F</div>
+			<section class="location">
+				<h2 id="city"></h2>
+				<h3 id="country"></h2>
+				<h3 id="weatherValue"></h3>
+			</section>
+			<section class="time">
+				<h1 id="time"></h1>
+			</section>
+			<table id="current">
+				<tr>
+					<td><div id="icon"></div></td>
+					<td><img src="./images/wind.png" alt="wind icon" class="icon"></td>
+					<td><img src="./images/humidity.png" alt="humidity icon" class="icon"></td>
+					<td><img src="./images/sunrise.png" alt="sunrise icon" class="icon"></td>
+					<td><img src="./images/sunset.png" alt="sunset icon" class="icon"></td>
+				</tr>
+				<tr>
+					<td>
+						<h2 id="temperature"></h2>
+						<div id="celsius">C</div>
+						<div id="stick">|</div>
+						<div id="fahrenheit">F</div>
+					</td>
+					<td>
+						<div id="name"></div>
+						<div id="speed"></div>
+					</td>
+					<td>
+						<div id="humidity"></div>
+					</td>
+					<td>
+						<div id="sunrise"></div>
+					</td>
+					<td>
+						<div id="sunset"></div>
+					</td>
+				</tr>
+			</table>
+			<!-- <section class="inner">
+				<div id="icon"></div>
+				<h2 id="temperature"></h2>
+				<div id="celsius">C</div>
+				<div id="stick">|</div>
+				<div id="fahrenheit">F</div>
+			</section>
+			<section class="inner">
+				<img src="./images/wind.png" alt="wind icon" class="icon">
+				<div id="name"></div>
+				<div id="speed"></div>
+			</section>
+			<section class="inner">
+				<img src="./images/humidity.png" alt="humidity icon" class="icon">
+				<div id="humidity"></div>
+			</section>
+			<section class="inner">
+				<img src="./images/sunrise.png" alt="sunrise icon" class="icon">
+				<div id="sunrise"></div>
+			</section>
+			<section class="inner">
+				<img src="./images/sunset.png" alt="sunset icon" class="icon">
+				<div id="sunset"></div>
+			</section> -->
 		</section>
 	</article>
 </main>
