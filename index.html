@@ -12,16 +12,17 @@
 	<nav>
 		<ul id="navbar">
 			<li id="logo"><img src="./images/sunLogo.png" id="logo">Weather</li>
-			<li class="navbar">Current Weather</li>
+			<li class="navbar">Weather Information</li>
 		</ul>
 	</nav>
 </header>
 
 <main>
-	<h1>Current Weather Forecast</h1>
+	<h1>Weather Information</h1>
 	<article>
 		<section> <!-- current -->
 			<section class="location">
+				<h2 id="day"></h2>
 				<h2 id="city"></h2>
 				<h3 id="country"></h2>
 				<h3 id="weatherValue"></h3>
@@ -29,7 +30,7 @@
 			<section class="time">
 				<h1 id="time"></h1>
 			</section>
-			<table id="current">
+			<table class="current">
 				<tr>
 					<td><div id="icon"></div></td>
 					<td><img src="./images/wind.png" alt="wind icon" class="icon"></td>
@@ -84,6 +85,152 @@
 				<div id="sunset"></div>
 			</section> -->
 		</section>
+		
+		<hr>
+		
+		<section> <!-- forecast -->
+			<section class="location">
+				<h2 id="forecastDay"></h2>
+				<h3 id="forecastWeatherValue"></h3>
+			</section>
+			<table class="current">
+				<tr>
+					<td><div id="forecastIcon"></div></td>
+					<td><img src="./images/wind.png" alt="wind icon" class="icon"></td>
+					<td><img src="./images/humidity.png" alt="humidity icon" class="icon"></td>
+				</tr>
+				<tr>
+					<td>
+						<h2 id="min"></h2>
+						<h2 id="max"></h2>
+					</td>
+					<td>
+						<div id="forecastName"></div>
+						<div id="forecastSpeed"></div>
+					</td>
+					<td>
+						<div id="forecastHumidity"></div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<hr>
+		
+		<section> <!-- forecast2 -->
+			<section class="location">
+				<h2 id="forecastDay2"></h2>
+				<h3 id="forecastWeatherValue2"></h3>
+			</section>
+			<table class="current">
+				<tr>
+					<td><div id="forecastIcon2"></div></td>
+					<td><img src="./images/wind.png" alt="wind icon" class="icon"></td>
+					<td><img src="./images/humidity.png" alt="humidity icon" class="icon"></td>
+				</tr>
+				<tr>
+					<td>
+						<h2 id="min2"></h2>
+						<h2 id="max2"></h2>
+					</td>
+					<td>
+						<div id="forecastName2"></div>
+						<div id="forecastSpeed2"></div>
+					</td>
+					<td>
+						<div id="forecastHumidity2"></div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<hr>
+		
+		<section> <!-- forecast3 -->
+			<section class="location">
+				<h2 id="forecastDay3"></h2>
+				<h3 id="forecastWeatherValue3"></h3>
+			</section>
+			<table class="current">
+				<tr>
+					<td><div id="forecastIcon3"></div></td>
+					<td><img src="./images/wind.png" alt="wind icon" class="icon"></td>
+					<td><img src="./images/humidity.png" alt="humidity icon" class="icon"></td>
+				</tr>
+				<tr>
+					<td>
+						<h2 id="min3"></h2>
+						<h2 id="max3"></h2>
+					</td>
+					<td>
+						<div id="forecastName3"></div>
+						<div id="forecastSpeed3"></div>
+					</td>
+					<td>
+						<div id="forecastHumidity3"></div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<hr>
+		
+		<section> <!-- forecast4 -->
+			<section class="location">
+				<h2 id="forecastDay4"></h2>
+				<h3 id="forecastWeatherValue4"></h3>
+			</section>
+			<table class="current">
+				<tr>
+					<td><div id="forecastIcon4"></div></td>
+					<td><img src="./images/wind.png" alt="wind icon" class="icon"></td>
+					<td><img src="./images/humidity.png" alt="humidity icon" class="icon"></td>
+				</tr>
+				<tr>
+					<td>
+						<h2 id="min4"></h2>
+						<h2 id="max4"></h2>
+					</td>
+					<td>
+						<div id="forecastName4"></div>
+						<div id="forecastSpeed4"></div>
+					</td>
+					<td>
+						<div id="forecastHumidity4"></div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<hr>
+		
+		<section> <!-- forecast5 -->
+			<section class="location">
+				<h2 id="forecastDay5"></h2>
+				<h3 id="forecastWeatherValue5"></h3>
+			</section>
+			<table class="current">
+				<tr>
+					<td><div id="forecastIcon5"></div></td>
+					<td><img src="./images/wind.png" alt="wind icon" class="icon"></td>
+					<td><img src="./images/humidity.png" alt="humidity icon" class="icon"></td>
+				</tr>
+				<tr>
+					<td>
+						<h2 id="min5"></h2>
+						<h2 id="max5"></h2>
+					</td>
+					<td>
+						<div id="forecastName5"></div>
+						<div id="forecastSpeed5"></div>
+					</td>
+					<td>
+						<div id="forecastHumidity5"></div>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
 	</article>
 </main>
 

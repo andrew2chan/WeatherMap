@@ -18,20 +18,25 @@ img.icon {
 	height: 50px;
 }
 
-table#current {
+table.current {
 	width: 100%;
 	table-layout: fixed;
 }
 
-h2#city, h3#country {
+h2#city, h3#country, h2#day {
 	margin: 0;
 	padding: 0;
 }
 
-h3#weatherValue {
+h3#weatherValue, h3#forecastWeatherValue {
 	margin: 0;
 	margin-bottom: 15px;
 	padding: 0;
+}
+
+h2#min, h2#max, h2#min2, h2#max2, h2#min3, h2#max3, h2#min4, h2#max4, h2#min5, h2#max5 {
+	display: inline-block;
+	margin-right: 10px;
 }
 
 @media screen and (max-width: 320px) { /* small phones */
@@ -250,6 +255,7 @@ h3#weatherValue {
 		border-radius: 5px;
 		padding: 20px 20px;
 	}
+	
 }
 @media screen and (min-width: 1200px) { /* desktops */
 
@@ -300,7 +306,7 @@ h3#weatherValue {
 		cursor: pointer;
 	}
 	
-	div#humidity, div#sunrise, div#sunset {
+	div#humidity, div#sunrise, div#sunset, div#forecastHumidity, div#forecastHumidity2, div#forecastHumidity3, div#forecastHumidity4, div#forecastHumidity5{
 		font-size: 150%;
 	}
 	
@@ -327,7 +333,7 @@ h3#weatherValue {
 		padding: 20px 20px;
 	}
 	
-	div#name, div#speed {
+	div#name, div#speed, div#forecastName, div#forecastSpeed, div#forecastName2, div#forecastSpeed2, div#forecastName3, div#forecastSpeed3, div#forecastName4, div#forecastSpeed4, div#forecastName5, div#forecastSpeed5 {
 		font-size: 125%;
 	}
 	
