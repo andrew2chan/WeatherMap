@@ -155,6 +155,7 @@ function displayForecast(xml) {
 
 document.getElementById("celsius").addEventListener("click", changeCelsius);
 document.getElementById("fahrenheit").addEventListener("click", changeFahrenheit);
+document.getElementById("searchIcon").addEventListener("click", changeLocation);
 
 function changeCelsius() {
 	document.getElementById("temperature").innerHTML = Math.round(kelvin[0] - 273.15);
@@ -193,4 +194,30 @@ function startClock() {
 	document.getElementById("time").innerHTML = time;
 	
 	setTimeout(startClock, 1000);
+}
+
+function changeLocation() {
+	var xhttp = new XMLHttpRequest(); //current
+	var newLocation = document.getElementById("search").value;
+	var i;
+	for(i=0;i<kelvin.length; i++)
+		kelvin.pop();
+	var newLocationCurrent = "http://api.openweathermap.org/data/2.5/weather?q=" + newLocation + "&APPID=e06d681eb49284222ec6c140b7cdf370&mode=xml";
+	var newLocationForecast = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + newLocation + "&APPID=e06d681eb49284222ec6c140b7cdf370&mode=xml";
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			displayCurrent(this);
+		}
+	};
+	xhttp.open("GET", newLocationCurrent, true);
+	xhttp.send();
+	
+	xhttp = new XMLHttpRequest(); //forecast
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			displayForecast(this);
+		}
+	};
+	xhttp.open("GET", newLocationForecast, true);
+	xhttp.send();
 }

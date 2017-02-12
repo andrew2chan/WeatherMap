@@ -99,6 +99,27 @@ h2#min, h2#max, h2#min2, h2#max2, h2#min3, h2#max3, h2#min4, h2#max4, h2#min5, h
 		transition: all 0.5s ease-in-out;
 	}
 
+	input {
+		display: inline-block;
+		width: 70%;
+		margin: auto;
+		padding: 10px;
+	}
+	
+	form {
+		text-align: center;
+	}
+	
+	img#searchIcon {
+		display: inline-block;
+		background-color: white;
+		border-radius: 10px;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		top: 10px;
+		cursor: pointer;
+	}
 }
 @media screen and (min-width: 321px) and (max-width: 767px) { /* decent sized phones */
 	ul#navbar {
@@ -169,6 +190,28 @@ h2#min, h2#max, h2#min2, h2#max2, h2#min3, h2#max3, h2#min4, h2#max4, h2#min5, h
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 		border-radius: 5px;
 		padding: 20px 20px;
+	}
+	
+	input {
+		display: inline-block;
+		width: 70%;
+		margin: auto;
+		padding: 10px;
+	}
+	
+	form {
+		text-align: center;
+	}
+	
+	img#searchIcon {
+		display: inline-block;
+		background-color: white;
+		border-radius: 10px;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		top: 10px;
+		cursor: pointer;
 	}
 }
 
@@ -256,6 +299,27 @@ h2#min, h2#max, h2#min2, h2#max2, h2#min3, h2#max3, h2#min4, h2#max4, h2#min5, h
 		padding: 20px 20px;
 	}
 	
+	input {
+		display: inline-block;
+		width: 40%;
+		margin: auto;
+		padding: 10px;
+	}
+	
+	form {
+		text-align: center;
+	}
+	
+	img#searchIcon {
+		display: inline-block;
+		background-color: white;
+		border-radius: 10px;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		top: 10px;
+		cursor: pointer;
+	}
 }
 @media screen and (min-width: 1200px) { /* desktops */
 
@@ -356,5 +420,27 @@ h2#min, h2#max, h2#min2, h2#max2, h2#min3, h2#max3, h2#min4, h2#max4, h2#min5, h
 	h1#time {
 		font-size: 500%;
 		margin: 0;
+	}
+	
+	input {
+		display: inline-block;
+		width: 40%;
+		margin: auto;
+		padding: 10px;
+	}
+	
+	form {
+		text-align: center;
+	}
+	
+	img#searchIcon {
+		display: inline-block;
+		background-color: white;
+		border-radius: 10px;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		top: 10px;
+		cursor: pointer;
 	}
 }
