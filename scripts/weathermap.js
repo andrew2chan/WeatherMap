@@ -24,7 +24,7 @@ window.onload = function() {
 
 function displayCurrent(xml) {
 	var xmlDoc = xml.responseXML;
-	var day = xmlDoc.getElementsByTagName("lastupdate")[0].getAttribute("value");
+	var date = new Date();
 	var city = xmlDoc.getElementsByTagName("city")[0].getAttribute("name");
 	var country = xmlDoc.getElementsByTagName("country")[0].childNodes[0];
 	var temperature = xmlDoc.getElementsByTagName("temperature")[0].getAttribute("value");
@@ -35,7 +35,7 @@ function displayCurrent(xml) {
 	var humidity = xmlDoc.getElementsByTagName("humidity")[0].getAttribute("value");
 	var sunrise = xmlDoc.getElementsByTagName("sun")[0].getAttribute("rise");
 	var sunset = xmlDoc.getElementsByTagName("sun")[0].getAttribute("set");
-	document.getElementById("day").innerHTML = day.substring(0,10);;
+	document.getElementById("day").innerHTML = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate();
 	document.getElementById("city").innerHTML = city;
 	document.getElementById("country").innerHTML = country.nodeValue;
 	document.getElementById("icon").innerHTML = "<img src=\"http://openweathermap.org/img/w/" + icon + ".png\" alt=\"weather icon\">";
